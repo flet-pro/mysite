@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,rgb(199, 30, 30),rgb(226, 187, 15));
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: 20px auto;
+    align-items: center; 
+    font-weight: 100;
+    position: sticky;
+    z-index: 1;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 2rem;
+}
+.log-area {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
+}
+.nav-links ul a{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links ul a:hover{
+    color: rgb(85, 81, 81);
+}
+.info{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left: -15%;
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 1.5s;
+}
+.feature{
+    position: absolute;
+    color: white;
+}
+.feature img{
+    width: 70px;
+}
+.one{
+    display: flex;
+    top: 50%;
+    right: 10%;
+    transform: translateX(50%) translateY(-50%);
+}
+.two{
+    display: flex;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(-90deg);
+}
+.three{
+    display: flex;
+    bottom: 10%;
+    right: 50%;
+    transform: translateX(50%) translateY(50%) rotate(90deg);
+}
+.four{
+    display: flex;
+    top: 450px;
+    left: 70px;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+}
+.letter{
+    margin-left: 15px;
+}
+.feature div p{
+    margin-top: 3px;
+}
+.pc{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    z-index: 1;
+}
+.control{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    text-align: center;
+}
+.control h3{
+    color: #fff;
+    margin: 20px 0;
+}
+#upBt{
+    cursor: pointer;
+    width: 20px;
+}
+#downBt{
+    cursor: pointer;
+    transform: rotate(180deg);
+    width: 20px;
+}
+.overray {
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-left: 500px solid #fff;
+    border-top: 500px solid #fff;
+    border-bottom: 500px solid #fff;
+}
