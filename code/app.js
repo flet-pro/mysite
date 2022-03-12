@@ -21,6 +21,7 @@ downBt.onclick = function(){
     circle.style.transform = rotateSum;
     rorateValue = rotateSum;
     console.log("Hello World!");
+    console.log("Hello")
     //let rorateValue = circle.style.transform;
     // is this hard for CPU?
 } 
